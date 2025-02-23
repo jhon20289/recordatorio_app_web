@@ -1,19 +1,26 @@
-/* Reinicio básico */
+/* =========================================
+   1. REINICIO BÁSICO
+========================================= */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/* =========================================
+   2. ESTILOS GLOBALES
+========================================= */
 body {
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
   padding: 10px;
 }
 
-/* Encabezado verde */
+/* =========================================
+   3. ENCABEZADO (HEADER)
+========================================= */
 header {
-  background-color: #4CAF50;
+  background-color: #4CAF50;  /* Verde */
   color: white;
   padding: 15px;
   display: flex;
@@ -28,7 +35,7 @@ header h1 {
   margin: 0;
 }
 
-/* Botón WhatsApp: verde suave */
+/* Botón WhatsApp */
 #whatsappBtn {
   background-color: #66BB6A;
   color: white;
@@ -44,7 +51,9 @@ header h1 {
   background-color: #57a05a;
 }
 
-/* Tarjeta para la sección de entrada */
+/* =========================================
+   4. SECCIÓN DE ENTRADA (input-section)
+========================================= */
 .input-section {
   background-color: white;
   padding: 15px;
@@ -70,9 +79,9 @@ header h1 {
   border-color: #64B5F6;
 }
 
-/* Botón Aceptar: azul claro */
+/* Botón Aceptar */
 .input-section button {
-  background-color: #64B5F6;
+  background-color: #64B5F6; /* Azul claro */
   color: white;
   border: none;
   padding: 12px;
@@ -86,17 +95,18 @@ header h1 {
   background-color: #42A5F5;
 }
 
-/* Contenedor de los recordatorios */
+/* =========================================
+   5. LISTA DE RECORDATORIOS
+========================================= */
 #recordatorios {
   margin-top: 10px;
 }
 
-/* Cada recordatorio */
 .recordatorio {
   background-color: white;
   padding: 15px;
   margin-bottom: 10px;
-  border-left: 5px solid #4CAF50;
+  border-left: 5px solid #4CAF50; /* Borde verde */
   border-radius: 6px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
@@ -119,9 +129,12 @@ header h1 {
   color: #333;
 }
 
-/* Botón Posponer: amarillo */
+/* =========================================
+   6. BOTONES DE ACCIÓN (Posponer, Eliminar)
+========================================= */
+/* Botón Posponer */
 .postpone-btn {
-  background-color: #FFC107;
+  background-color: #FFC107; /* Amarillo */
   color: white;
   border: none;
   padding: 8px 12px;
@@ -136,9 +149,9 @@ header h1 {
   background-color: #e0a800;
 }
 
-/* Botón Eliminar: rojo */
+/* Botón Eliminar */
 .delete-btn {
-  background-color: #E74C3C;
+  background-color: #E74C3C; /* Rojo */
   color: white;
   border: none;
   padding: 8px 12px;
