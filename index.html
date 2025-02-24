@@ -6,6 +6,18 @@
   <title>Mi App Web de Recordatorios</title>
   <!-- Enlazamos el CSS -->
   <link rel="stylesheet" href="style.css">
+  
+  <!-- OneSignal SDK para notificaciones push -->
+  <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.js" async=""></script>
+  <script>
+    window.OneSignal = window.OneSignal || [];
+    OneSignal.push(function() {
+      OneSignal.init({
+        appId: "79a3ea41-f064-4c56-b4f1-1a9a09189c56",
+        serviceWorkerPath: 'OneSignalSDKWorker.js' // Asegúrate de que este archivo esté en la raíz del proyecto
+      });
+    });
+  </script>
 </head>
 <body>
   <header>
