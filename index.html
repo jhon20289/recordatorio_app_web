@@ -1,46 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi App Web de Recordatorios</title>
-  <!-- Enlazamos el CSS -->
-  <link rel="stylesheet" href="style.css">
-  
-  <!-- OneSignal SDK para notificaciones push -->
-  <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.js" async=""></script>
-  <script>
-    window.OneSignal = window.OneSignal || [];
-    OneSignal.push(function() {
-      OneSignal.init({
-        appId: "79a3ea41-f064-4c56-b4f1-1a9a09189c56",
-        serviceWorkerPath: 'OneSignalSDKWorker.js' // Asegúrate de que este archivo esté en la raíz del proyecto
-      });
-    });
-  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mis Recordatorios</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <header>
-    <h1>Mis Recordatorios</h1>
-    <button id="whatsappBtn" onclick="window.open('https://wa.me/', '_blank')">WhatsApp</button>
+    <h1>Dios nos anpare y proteja de todo mal y peligro amen  </h1>
   </header>
 
-  <!-- Tarjeta de entrada para agregar recordatorios -->
   <section class="input-section">
     <input type="text" id="inputRecordatorio" placeholder="Ingresa tu recordatorio">
     <input type="datetime-local" id="inputFechaHora">
     <button id="addBtn">Aceptar</button>
   </section>
 
-  <!-- Contenedor para mostrar los recordatorios -->
-  <section id="recordatorios"></section>
+  <section id="recordatorios" class="list-section"></section>
 
-  <!-- Botón para solicitar el permiso de notificaciones -->
-  <button onclick="OneSignal.showSlidedownPrompt()">
-    Permitir Notificaciones
-  </button>
-
-  <!-- Enlazamos el JS -->
   <script src="script.js"></script>
 </body>
 </html>
